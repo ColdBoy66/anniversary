@@ -1,0 +1,138 @@
+/* Google Fonts */
+body {
+  font-family: 'Poppins', sans-serif; /* Changed to Poppins for readability */
+  background-color: #f9f3f3;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #555;
+  animation: fadeIn 2s ease-in;
+  font-weight: 400; /* Regular weight for readability */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slideshow Styling */
+.slideshow {
+  position: relative;
+  margin: 40px auto;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: none;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #e74c3c;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1.5s ease-out;
+  font-weight: 600; /* Semi-bold for emphasis */
+}
+
+.slide-text {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 50%;
+  user-select: none;
+  background-color: rgba(231, 76, 60, 0.8);
+  z-index: 3;
+}
+
+.prev {
+  left: -70px;
+}
+
+.next {
+  right: -70px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(231, 76, 60, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Confetti Canvas */
+#confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}

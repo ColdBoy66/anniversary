@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 6 Months, My Love!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Happy 6 Months, My Love! </h1>
+    <p class="subtitle">Every moment with you feels like a dream. Here's to us and many more months together!</p>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow">
+      <div class="slide fade">
+        <p class="slide-text">"You are my today and all of my tomorrows."</p>
+      </div>
+      <div class="slide fade">
+        <p class="slide-text">"I love you more than I have ever found a way to say to you."</p>
+      </div>
+      <div class="slide fade">
+        <p class="slide-text">"In your arms is where I belong, forever and always."</p>
+      </div>
+      <div class="slide fade">
+        <p class="slide-text">"You are my sunshine, my only sunshine."</p>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Navigation Buttons -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="romantic-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Confetti Animation -->
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
